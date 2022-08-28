@@ -11,7 +11,7 @@ This script automates the process of uploading game files to your Wii U over FTP
 [FTPii U Everywhere](https://github.com/wiiu-controller-mods/ftpiiu-everywhere/releases) (Note: The FTPii U Everywhere .ELF file simply replaces the FTPii U .ELF file)
 ## Usage
 1. Collect your modded game files. These can be directly downloaded from a mod page or exported using [BCML's](https://gamebanana.com/tools/6624) export feature.
-2. Organize your files into the proper folders. In the case of Breath of the Wild, this can be done automatically through the use of [MasonJ's FTP Mod File Sorter](https://gamebanana.com/tools/6718). Otherwise you'll need to [sort the mod files yourself](##sorting-your-mod-files).
+2. Organize your files into the proper folders. In the case of Breath of the Wild, this can be done automatically through the use of [MasonJ's FTP Mod File Sorter](https://gamebanana.com/tools/6718). Otherwise you'll need to sort the mod files yourself.
 3. Edit script.txt for your needs. Instructions are included within the file explaining what must be set.
 4. Run FTPii U on your Wii U.
 5. Run the .bat (Note: you can ignore this file completely and run through the command line yourself with the command "winscp.com /ini=nul /script=script.txt")
