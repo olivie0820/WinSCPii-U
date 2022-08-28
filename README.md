@@ -6,9 +6,9 @@ FTPii U is an excellent tool for modifying game files on your Wii U system, effe
 Using FileZilla as your FTP client for this task can present some challenges. FTPii U's upload speed from the Wii U is quite slow, meaning directory listings can take an exceptional amount of time to upload to your computer. In larger Wii U games such as Breath of the Wild, these directory listings can take up to half a minute to load. FileZilla forces a refresh of the directory listing after each upload, meaning that when uploading files in larger directories, you'll be waiting this half-minute period in between each subsequent file upload. This cannot be disabled in FileZilla (as far as I know anyway), hence the need for an FTP Client such as WinSCP.
 This script automates the process of uploading game files to your Wii U over FTPii U, while additionally removing this directory refresh, resulting in significantly faster batch uploads with significantly less user intervention. It is initialized for use with Breath of the Wild, but can be easily modified for use with any game.
 ## Requirements
-[WinSCP](https://winscp.net/eng/downloads.php) (Note: The .NET assembly / COM library is not required for this script)
-[FTPii U](https://github.com/dimok789/ftpiiu/releases/tag/v0.4)
-[FTPii U Everywhere](https://github.com/wiiu-controller-mods/ftpiiu-everywhere/releases) (Note: The FTPii U Everywhere .ELF file simply replaces the FTPii U .ELF file)
+- [WinSCP](https://winscp.net/eng/downloads.php) (Note: The .NET assembly / COM library is not required for this script)
+- [FTPii U](https://github.com/dimok789/ftpiiu/releases/tag/v0.4)
+- [FTPii U Everywhere](https://github.com/wiiu-controller-mods/ftpiiu-everywhere/releases) (Note: The FTPii U Everywhere .ELF file simply replaces the FTPii U .ELF file)
 ## Usage
 1. Collect your modded game files. These can be directly downloaded from a mod page or exported using [BCML's](https://gamebanana.com/tools/6624) export feature.
 2. Organize your files into the proper folders. In the case of Breath of the Wild, this can be done automatically through the use of [MasonJ's FTP Mod File Sorter](https://gamebanana.com/tools/6718). Otherwise you'll need to sort the mod files yourself.
