@@ -1,0 +1,33 @@
+# replace the blank with your FTPii U IP
+# port 21 is the default for FTP and doesn't need to be input
+open ftp://anonymous:anonymous%%40example.com@________/
+
+option confirm off
+
+# replace the blank with the path to your mods folder
+# the directory should contain your three mod folders
+lcd "_____________"
+
+# replace the blank with the location of your game files on your Wii U
+# /storage_usb for usb
+# /storage_mlc for NAND
+cd "_________/usr/title"
+
+# upload base game files (these go in the base game directory 00050000)
+lcd "Base Game"
+cd "00050000/101c9400" #this is BotW's title ID. Change this if you're modding a different game
+put *
+
+# upload update files (these go in the update directory 0005000e)
+lcd ../
+lcd "Update Data"
+cd ../../
+cd "0005000e/101c9400" #this is BotW's title ID. Change this if you're modding a different game
+put *
+
+# upload custom files (these also go in the update directory 0005000e)
+lcd ../
+lcd "D:\Olivia\Downloads\sorted-mods\Custom Files (put into update folder)"
+put *
+
+exit
